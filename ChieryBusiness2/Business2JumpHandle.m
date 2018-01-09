@@ -35,6 +35,15 @@
         
         return YES;
     }
+    
+    if ([searchType isEqualToString:@"/fetchData"]) {
+        
+        NSDictionary *dict = @{@"key":@"3",@"key2":@"hello world"};
+        
+        [ChieryJumpHandle jumpHandleResponse:responseDelg responseData:dict withOpenURL:url urlData:urlData userInfo:userInfo];
+        return YES;
+    }
+    
     return NO;
 }
 
