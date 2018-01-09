@@ -9,6 +9,7 @@
 #import "Business2JumpHandle.h"
 #import "ChieryBusiness2.h"
 #import "ChieryVCController.h"
+#import "ChieryJumpHandle.h"
 
 @implementation Business2JumpHandle
 
