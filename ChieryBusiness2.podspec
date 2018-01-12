@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ChieryBusiness2"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "业务2"
 
   s.description  = <<-DESC
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/chieryd/ChieryBusiness2.git", :tag => "#{s.version}" }
 
-  s.dependency "ChieryJumpHandle"
+  s.dependency "ChieryJumpHandleLib"
   s.dependency "ChieryConfigure"
-  s.dependency "ChieryCommonKit"
-  s.dependency "ChieryHomePage"
-  s.dependency "ChieryVCController"
+  s.dependency "ChieryCommonKitLib"
+  s.dependency "ChieryHomePageLib"
+  s.dependency "ChieryVCControllerLib"
   s.source_files  = "ChieryBusiness2/**/*.{h,m}"
 
   s.public_header_files = "ChieryBusiness2/**/*.h"
