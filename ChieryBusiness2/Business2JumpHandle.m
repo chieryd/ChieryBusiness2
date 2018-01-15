@@ -39,7 +39,11 @@
     
     if ([searchType isEqualToString:@"/fetchData"]) {
         
-        NSDictionary *dict = @{@"key":@"3",@"key2":@"hello world"};
+#ifdef DEBUG
+        NSDictionary *dict = @{@"Debug":@YES, @"key":@"3",@"key2":@"hello world"};
+#elesif
+        NSDictionary *dict = @{@"Release":@YES, @"key":@"3",@"key2":@"hello world"};
+#endif
         
         [ChieryJumpHandle jumpHandleResponse:responseDelg responseData:dict withOpenURL:url urlData:urlData userInfo:userInfo];
         return YES;
