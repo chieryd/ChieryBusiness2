@@ -41,7 +41,7 @@
         
 #ifdef DEBUG
         NSDictionary *dict = @{@"Debug":@YES, @"key":@"3",@"key2":@"hello world"};
-#elesif
+#else
         NSDictionary *dict = @{@"Release":@YES, @"key":@"3",@"key2":@"hello world"};
 #endif
         
